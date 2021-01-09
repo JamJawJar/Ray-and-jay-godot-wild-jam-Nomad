@@ -15,6 +15,7 @@ func _physics_process(delta: float) -> void:
 	get_direction_and_move()
 
 
+
 func get_direction_and_move():
 	var direction = Vector2(0, 0)
 	if Input.is_action_pressed("Right"):
@@ -39,3 +40,7 @@ func get_direction_and_move():
 func _collectible_detected(collectible: Area2D) -> void:
 	no_of_collectibles_collected += 1
 	collectible.queue_free()
+	
+
+
+

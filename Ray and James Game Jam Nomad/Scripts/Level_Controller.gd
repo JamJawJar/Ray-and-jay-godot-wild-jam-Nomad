@@ -16,3 +16,4 @@ func _process(delta: float) -> void:
 	if $Player.number_of_collectibles_collected == number_of_collectibles:
 		$Portal._turn_on_portal()
 	change_world = $Portal.activate_portal
+

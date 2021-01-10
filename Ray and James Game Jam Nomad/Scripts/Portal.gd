@@ -1,5 +1,6 @@
 extends Area2D
 
+export var next_level = 0
 #whether or no the portal is ready to be used
 var portal_turned_on = false
 #has the portal been activated

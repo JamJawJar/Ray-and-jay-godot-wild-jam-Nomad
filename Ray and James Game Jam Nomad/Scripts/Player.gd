@@ -5,7 +5,7 @@ extends KinematicBody2D
 export var player_speed = 1000.0
 
 
-var no_of_collectibles_collected = 0
+var number_of_collectibles_collected = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -38,7 +38,7 @@ func get_direction_and_move():
 
 
 func _collectible_detected(collectible: Area2D) -> void:
-	no_of_collectibles_collected += 1
+	number_of_collectibles_collected += 1
 	collectible.queue_free()
 	
 

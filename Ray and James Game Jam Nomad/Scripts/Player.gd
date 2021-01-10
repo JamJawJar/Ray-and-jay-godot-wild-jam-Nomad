@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 
 
-export var player_speed = 1000.0
+export var player_speed = 200.0
 
 
 var number_of_collectibles_collected = 0

@@ -16,7 +16,7 @@ func _ready() -> void:
 
 func _turn_on_portal():
 	portal_turned_on = true
-	self.visible = true
+	#self.visible = true
 	#change art so it is now on
 
 

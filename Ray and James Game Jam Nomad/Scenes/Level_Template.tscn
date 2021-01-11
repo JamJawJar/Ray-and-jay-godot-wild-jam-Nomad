@@ -7,15 +7,37 @@
 
 [node name="Level_Controller" type="Node2D"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1.05945, 1.05948 )
 
 [node name="Portal" parent="." instance=ExtResource( 4 )]
-position = Vector2( -305, -218 )
+position = Vector2( -307.119, -204.227 )
 
 [node name="Collectible" parent="." instance=ExtResource( 2 )]
 position = Vector2( -307.163, -131.946 )
 
+[node name="Collectible2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -302.401, 1.39555 )
+
+[node name="Collectible3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -213.506, 76.0033 )
+
+[node name="Collectible4" parent="." instance=ExtResource( 2 )]
+position = Vector2( -121.437, -120.834 )
+
+[node name="Collectible5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 16.6666, -119.247 )
+
+[node name="Collectible6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 183.344, -70.0374 )
+
 [node name="TileMap" type="TileMap" parent="."]
 cell_size = Vector2( 32, 32 )
 format = 1
+__meta__ = {
+"_edit_lock_": true
+}

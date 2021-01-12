@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/New Piskel-1.png-defb8f8c996a7baff75f55589c71e76d.stex"
+path="res://.import/Forest Trees.png-be71f5c90b9ceb17c56ec94f55c08a81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/New Piskel-1.png"
-dest_files=[ "res://.import/New Piskel-1.png-defb8f8c996a7baff75f55589c71e76d.stex" ]
+source_file="res://Art/Forest Trees.png"
+dest_files=[ "res://.import/Forest Trees.png-be71f5c90b9ceb17c56ec94f55c08a81.stex" ]
 
 [params]
 

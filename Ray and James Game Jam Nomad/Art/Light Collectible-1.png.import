@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/New Piskel-1.png-defb8f8c996a7baff75f55589c71e76d.stex"
+path="res://.import/Light Collectible-1.png-038a3878e9941d485bbd43145271b59a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/New Piskel-1.png"
-dest_files=[ "res://.import/New Piskel-1.png-defb8f8c996a7baff75f55589c71e76d.stex" ]
+source_file="res://Art/Light Collectible-1.png"
+dest_files=[ "res://.import/Light Collectible-1.png-038a3878e9941d485bbd43145271b59a.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -9,6 +9,7 @@ var number_of_collectibles = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	number_of_collectibles	= get_tree().get_nodes_in_group("Portal_Collectibles").size()
+	scene_number_to_load = $"Portal".next_level
 	
 	
 

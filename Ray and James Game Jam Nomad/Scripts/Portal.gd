@@ -6,6 +6,8 @@ var portal_turned_on = false
 #has the portal been activated
 var activate_portal = false
 
+var open_portal_texture = preload("res://Art/Portal open.png")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -17,6 +19,7 @@ func _ready() -> void:
 
 func _turn_on_portal():
 	portal_turned_on = true
+	$Sprite.texture = open_portal_texture
 	#self.visible = true
 	#change art so it is now on
 

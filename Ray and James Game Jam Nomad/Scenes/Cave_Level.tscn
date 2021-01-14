@@ -26,6 +26,7 @@ __meta__ = {
 position = Vector2( 1.05945, 1.05948 )
 
 [node name="Portal" parent="." instance=ExtResource( 4 )]
+next_level = 2
 
 [node name="Collectible" parent="." instance=ExtResource( 2 )]
 position = Vector2( -2606.88, -177.022 )

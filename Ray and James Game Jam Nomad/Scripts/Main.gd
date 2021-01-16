@@ -1,6 +1,8 @@
 extends Node2D
 
-var scenes = [preload("res://Scenes/Menu.tscn"), preload("res://Scenes/Cave_Level.tscn"), preload("res://Scenes/Forest_Level.tscn")]
+
+var scenes = [preload("res://Scenes/Menu.tscn"), preload("res://Scenes/Cave_Level.tscn"), preload("res://Scenes/Forest_Level.tscn"), preload("res://Scenes/Win screen.tscn")]
+
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"

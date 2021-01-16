@@ -29,6 +29,9 @@ position = Vector2( -96.4846, -83.0302 )
 [node name="Portal" parent="." instance=ExtResource( 4 )]
 position = Vector2( -100.374, -302.701 )
 
+next_level = 3
+
+
 [node name="Collectible" parent="." instance=ExtResource( 2 )]
 position = Vector2( -1698.04, 44.1236 )
 

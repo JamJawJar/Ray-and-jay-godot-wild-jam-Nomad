@@ -16,6 +16,8 @@ func _process(delta: float) -> void:
 	if get_child_count() != 0:
 		if get_child(0).load_scene_now:
 			load_scene(get_child(0).scene_number_to_load)
+		if get_child(0).Quit:
+			get_tree().quit()
 
 func load_scene(scene_number):
 	if get_child_count() != 0:

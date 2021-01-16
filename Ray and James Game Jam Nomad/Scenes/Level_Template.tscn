@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Level_Controller.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Collectible.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Portal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Collectible_Counter.tscn" type="PackedScene" id=5]
 
 [node name="Level_Controller" type="Node2D"]
 script = ExtResource( 1 )
@@ -45,3 +46,5 @@ position = Vector2( 266.976, -191.085 )
 
 [node name="Collectible6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 183.344, -70.0374 )
+
+[node name="Collectible_Counter" parent="." instance=ExtResource( 5 )]

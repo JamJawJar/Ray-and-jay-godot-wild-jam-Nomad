@@ -6,7 +6,7 @@ export var player_speed = 200.0
 
 
 var number_of_collectibles_collected = 0
-
+var Quit = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -32,8 +32,9 @@ func get_direction_and_move():
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+func _process(delta: float) -> void:
+	if Input.is_action_pressed("Quit"):
+		Quit = true
 
 
 

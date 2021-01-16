@@ -17,6 +17,8 @@ _global_script_class_icons={
 
 config/name="Ray and James Game Jam Nomad"
 run/main_scene="res://Scenes/Main.tscn"
+boot_splash/image="res://Art/Spoopy-1.png"
+boot_splash/use_filter=false
 config/icon="res://Art/icon.png"
 
 [display]
@@ -60,9 +62,7 @@ Right={
 }
 Quit={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"unicode":0,"echo":false,"script":null)
-, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
- ]
+"events": [  ]
 }
 
 [layer_names]

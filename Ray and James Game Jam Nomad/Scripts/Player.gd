@@ -7,6 +7,7 @@ export var player_speed = 200.0
 
 var number_of_collectibles_collected = 0
 var Quit = false
+var dead = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -43,13 +44,16 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("Quit"):
 		Quit = true
 
-
+func restart_timer():
+	$Timer.start()
+	$AudioStreamPlayer.play()
 
 
 func _collectible_detected(collectible: Area2D) -> void:
 	number_of_collectibles_collected += 1
+	restart_timer()
 	collectible.queue_free()
 	
 
-
-
+func die() -> void:
+	dead = true

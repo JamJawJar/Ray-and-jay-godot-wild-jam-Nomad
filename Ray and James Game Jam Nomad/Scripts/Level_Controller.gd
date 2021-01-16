@@ -24,6 +24,18 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
+	
+	#load next scene if the player entered the active portal
+	load_scene_now = $Portal.activate_portal
+	#quit the game if the player decides too
+	Quit = $Player.Quit
+	
+	
+	if $Player.dead:
+		scene_number_to_load = 4
+		load_scene_now = true
+	
 	#find the amount of collectibles left
 	current_number_of_collectibles = total_number_of_collectibles - $Player.number_of_collectibles_collected
 	#update the collectible counter
@@ -34,7 +46,4 @@ func _process(delta: float) -> void:
 		$Collectible_Counter._set_portal_open_message()
 		$Portal._turn_on_portal()
 	
-	#load next scene if the player entered the active portal
-	load_scene_now = $Portal.activate_portal
-	#quit the game if the player decides too
-	Quit = $Player.Quit
+	

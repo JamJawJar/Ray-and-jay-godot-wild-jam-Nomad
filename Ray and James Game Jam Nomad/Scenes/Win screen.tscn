@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Art/Forest Floor.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Win screen.gd" type="Script" id=2]
+[ext_resource path="res://Art/Light Collectible-1.png" type="Texture" id=3]
+[ext_resource path="res://Art/Portal open.png" type="Texture" id=4]
+
+[node name="Win screen" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+margin_left = 484.0
+margin_top = 281.0
+margin_right = 540.0
+margin_bottom = 319.0
+
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer"]
+margin_right = 56.0
+margin_bottom = 14.0
+text = "You Win!"
+
+[node name="Button" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 56.0
+margin_bottom = 38.0
+text = "Menu"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 449.904, 252.124 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 567.503, 253.015 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 569.284, 352.796 )
+texture = ExtResource( 3 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+position = Vector2( 449.013, 353.687 )
+texture = ExtResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+position = Vector2( 511.376, 383.086 )
+texture = ExtResource( 3 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+position = Vector2( 507.812, 220.943 )
+texture = ExtResource( 3 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 430.304, 299.342 )
+texture = ExtResource( 3 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 584.43, 301.124 )
+texture = ExtResource( 3 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 511.376, 474.849 )
+texture = ExtResource( 4 )
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

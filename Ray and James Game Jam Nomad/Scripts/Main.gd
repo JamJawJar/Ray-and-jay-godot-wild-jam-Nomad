@@ -1,6 +1,6 @@
 extends Node2D
 
-var scenes = [preload("res://Scenes/Menu.tscn"), preload("res://Scenes/Forest_Level.tscn")]
+var scenes = [preload("res://Scenes/Menu.tscn"), preload("res://Scenes/Cave_Level.tscn"), preload("res://Scenes/Forest_Level.tscn")]
 # Declare member variables here. Examples:
 # var a: int = 2
 # var b: String = "text"
@@ -16,6 +16,8 @@ func _process(delta: float) -> void:
 	if get_child_count() != 0:
 		if get_child(0).load_scene_now:
 			load_scene(get_child(0).scene_number_to_load)
+		if get_child(0).Quit:
+			get_tree().quit()
 
 func load_scene(scene_number):
 	if get_child_count() != 0:

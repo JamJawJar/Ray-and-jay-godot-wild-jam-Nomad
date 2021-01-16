@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Light Collectible-1.png-038a3878e9941d485bbd43145271b59a.stex"
+path="res://.import/Portal open.png-ea2189c3aac2fcba6a7d9db80b1e84ef.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Light Collectible-1.png"
-dest_files=[ "res://.import/Light Collectible-1.png-038a3878e9941d485bbd43145271b59a.stex" ]
+source_file="res://Art/Portal open.png"
+dest_files=[ "res://.import/Portal open.png-ea2189c3aac2fcba6a7d9db80b1e84ef.stex" ]
 
 [params]
 

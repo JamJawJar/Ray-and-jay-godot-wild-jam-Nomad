@@ -1,7 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
-
+[ext_resource path="res://Art/Forest Floor.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -11,36 +11,73 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 50.0
-margin_top = 50.0
-margin_right = -50.0
-margin_bottom = -50.0
+texture = ExtResource( 2 )
+stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
-margin_right = 924.0
-margin_bottom = 500.0
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 50
+custom_constants/margin_top = 50
+custom_constants/margin_left = 50
+custom_constants/margin_bottom = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
-margin_left = 437.0
-margin_top = 231.0
-margin_right = 487.0
-margin_bottom = 269.0
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/MarginContainer"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 974.0
+margin_bottom = 550.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/CenterContainer"]
+margin_left = 281.0
+margin_top = 219.0
+margin_right = 643.0
+margin_bottom = 281.0
+custom_constants/separation = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer"]
+margin_right = 50.0
+margin_bottom = 62.0
 alignment = 1
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer/VBoxContainer"]
 margin_right = 50.0
 margin_bottom = 14.0
 text = "Nomad!"
 
-[node name="Button" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+[node name="Play_Button" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer/VBoxContainer"]
 margin_top = 18.0
 margin_right = 50.0
 margin_bottom = 38.0
 text = "Play"
-[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+
+[node name="Quit_Button" type="Button" parent="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 50.0
+margin_bottom = 62.0
+text = "Quit"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer"]
+margin_left = 150.0
+margin_right = 362.0
+margin_bottom = 62.0
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer/VBoxContainer2"]
+margin_right = 212.0
+margin_bottom = 48.0
+text = "Controls:
+Move : wasd/arrow keys/left stick
+Quit: Escape/B button"
+[connection signal="pressed" from="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer/VBoxContainer/Play_Button" to="." method="_on_Play_Button_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/CenterContainer/HBoxContainer/VBoxContainer/Quit_Button" to="." method="_on_Quit_Button_pressed"]

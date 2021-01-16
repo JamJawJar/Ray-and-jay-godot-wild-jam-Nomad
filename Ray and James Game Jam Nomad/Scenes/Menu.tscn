@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
-[ext_resource path="res://Art/Forest Floor.png" type="Texture" id=2]
+[ext_resource path="res://Art/CaveFloorTileMap.png" type="Texture" id=2]
+[ext_resource path="res://Art/Light Collectible-1.png" type="Texture" id=3]
+[ext_resource path="res://Art/Portal closed.png" type="Texture" id=4]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -21,6 +23,26 @@ stretch_mode = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite3" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 428.84, 279.844 )
+texture = ExtResource( 4 )
+
+[node name="Sprite4" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 16.3665, 16.5026 )
+texture = ExtResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 16.3665, 581.883 )
+texture = ExtResource( 3 )
+
+[node name="Sprite6" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1006.49, 585.659 )
+texture = ExtResource( 3 )
+
+[node name="Sprite7" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 1004.6, 16.5026 )
+texture = ExtResource( 3 )
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
 anchor_right = 1.0
